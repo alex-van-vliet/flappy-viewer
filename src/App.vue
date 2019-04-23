@@ -31,7 +31,7 @@ export default {
     }
   },
   created () {
-    axios.get('/bests.json').then((response) => {
+    axios.get('/flappy-viewer/bests.json').then((response) => {
       this.data = response.data
       setTimeout(() => {
         this.loader = false
